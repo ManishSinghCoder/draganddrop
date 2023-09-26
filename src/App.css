@@ -1,0 +1,210 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  background-color: blueviolet;
+  margin-top: 50px;
+}
+
+.subContainer {
+  width: 33%;
+  border: 3px solid black;
+
+  height: 700px;
+}
+
+.myContainer {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.myContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.myContainer::-webkit-scrollbar-corner {
+  background-color: blue;
+}
+
+.myContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.myContainer::-webkit-scrollbar-thumb {
+  background-color: rebeccapurple;
+  border-radius: 6px;
+}
+
+.myContainer::-webkit-scrollbar-thumb:hover {
+  background-color: blue;
+}
+
+.todoTask {
+  border: 1px solid red;
+  background-color: red;
+  width: 80%;
+  height: 120px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.inProgressTodoTask {
+  border: 1px solid yellow;
+  background-color: yellow;
+  width: 80%;
+  height: 120px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.doneTodoTask {
+  border: 1px solid green;
+  background-color: green;
+  width: 80%;
+  height: 120px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prevButton {
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 2rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.prevButton:disabled {
+  background-image: linear-gradient(
+    92.88deg,
+    gray,
+    9.16%,
+    gray 43.89%,
+    gray 64.72%
+  );
+
+  cursor: not-allowed;
+}
+
+.nextButton {
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 2rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.nextButton:disabled {
+  background-image: linear-gradient(
+    92.88deg,
+    gray,
+    9.16%,
+    gray 43.89%,
+    gray 64.72%
+  );
+
+  cursor: not-allowed;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btnSubmit {
+  background-image: linear-gradient(
+    92.88deg,
+    rgb(100, 190, 226) 9.16%,
+    rgb(118, 191, 204) 43.89%,
+    rgb(123, 184, 240) 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  height: 3rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(170, 102, 102, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnSubmit:disabled {
+  background-image: linear-gradient(
+    92.88deg,
+    gray,
+    9.16%,
+    gray 43.89%,
+    gray 64.72%
+  );
+
+  cursor: not-allowed;
+}
+
+.inputfield {
+  padding: 16px;
+  border-radius: 12px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
