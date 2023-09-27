@@ -137,48 +137,18 @@ function TaskList({
                 id={task.todo}
               >
                 <p className="title">{task.todo}</p>
-                {task.status === "todo" && (
-                  <div className="buttonSection">
-                    <button className="prevButton" disabled>
-                      Prev
-                    </button>
-                    <button
-                      className="nextButton"
-                      onClick={() => updateTaskStatus(index, "inProgress")}
-                    >
-                      Next
-                    </button>
-                  </div>
-                )}
-                {task.status === "inProgress" && (
-                  <div className="buttonSection">
-                    <button
-                      className="prevButton"
-                      onClick={() => updateTaskStatus(index, "todo")}
-                    >
-                      Prev
-                    </button>
-                    <button
-                      className="nextButton"
-                      onClick={() => updateTaskStatus(index, "done")}
-                    >
-                      next
-                    </button>
-                  </div>
-                )}
-                {task.status === "done" && (
-                  <div className="buttonSection">
-                    <button
-                      className="prevButton"
-                      onClick={() => updateTaskStatus(index, "inProgress")}
-                    >
-                      Prev
-                    </button>
-                    <button className="nextButton" disabled>
-                      next
-                    </button>
-                  </div>
-                )}
+                <div className="buttonSection">
+                  <button className="prevButton" disabled={task.status === "todo"} onClick={() => updateTaskStatus(index, task.status === "inProgress" ? "todo" : "inProgress")} >
+                    Prev
+                  </button>
+                  <button
+                    className="nextButton"
+                    disabled={task.status === "done"}
+                    onClick={() => updateTaskStatus(index, task.status === "todo" ? "inProgress" : "done")}
+                  >
+                    Next
+                  </button>
+                </div>
               </div>
             )
         )}
